@@ -19,7 +19,8 @@ class MetaGA:
         self.chrom_len = chrom_len
 
         self.log_data_function = log_data_function
-        
+
+
         def fitness_function(encoding, individual_id):
             self.num_evaluations += 1
             fitness = eval_function(self, encoding, individual_id)
@@ -146,7 +147,6 @@ class MetaGA:
     def run(self):
         
         self.population_objectives = numpy.zeros(self.ga_instance.sol_per_pop)
-
         self.run_count += 1
         self.run_time_start = time.time()
         self.run_time_seconds = 0
