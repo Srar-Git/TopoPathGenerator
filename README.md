@@ -26,6 +26,8 @@ Example
 
 ```bash
 python main.py -i benchmarks/bmcv/C05.dat -k 0,0 -s 8115,3520,8647,9420,3116,6377 -j MMMR
+12 begin 12 end 
+python main.py -i benchmarks/fattree4.csv -k 12,12 -s 8116 -j MMMR
 ```
 
 ### Windows & VSCode Environment
